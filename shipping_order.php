@@ -41,18 +41,27 @@
   <div class="col-md-12 billing-address bg-gray">
   <h3>Billing Address</h3>
   <div class="billaddress" style="border:2px solid #03befc;padding: 20px;">
+  
+  
+  </style>
   <form>
     <div class="form-group">
     <label for="name">Full Name</label>
-    <input type="text" class="form-control" name="fullname" id="" placeholder="John M.Doe" required>
+    
+
+    <input <?php if(!empty($_COOKIE['login_user'])){echo 'type="text" class="form-control" name="fullname" value = "'.$_COOKIE["name"].'" id="email" required';}else{ echo 'type="email" class="form-control" name="email"  id="email" required';} ?>>
+    
   </div>
   <div class="form-group">
     <label for="email">Email address</label>
-    <input type="email" class="form-control" name="email" id="" placeholder="name@example.com" required>
+
+    <input <?php if(!empty($_COOKIE['login_user'])){echo 'type="email" class="form-control" name="email" value = "'.$_COOKIE["email"].'" id="email" required';}else{ echo 'type="email" class="form-control" name="email"  id="email" required';} ?>>
+
   </div>
    <div class="form-group">
     <label for="phone">Mobile Number</label>
-    <input type="text" class="form-control" name="mobile" id="" placeholder="01..." required>
+    
+    <input <?php if(!empty($_COOKIE['login_user'])){echo 'type="text" class="form-control" name="mobile" value = "'.$_COOKIE["phone"].'" id="email" required';}else{ echo 'type="text" class="form-control" name="mobile"  id="mobile" required';} ?>>
   </div>
  <div class="form-group">
     <label for="address">Address</label>

@@ -89,8 +89,9 @@
                                    <li class="registration" id="user_li_id">
                                     <?php
 
+
                                     
-                                    if(empty($_SESSION['login_user']))
+                                    if(empty($_COOKIE['login_user']))
                                     {
                                         
                                         echo '  <a href="" class="" data-toggle="modal" data-target="#modalLRForm"><span class="ti-user"></span>
@@ -257,26 +258,30 @@
             <div class="modal-body">
               <form action="user_signup.php" method="post">
                     <div class="md-form form-sm mb-1">
-                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
                         <label data-error="wrong" data-success="right" for="modalLRInput10">Your Full Name</label>
+                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
+                        
                       </div>  
                       <div class="md-form form-sm mb-1">
-                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="username">
                         <label data-error="wrong" data-success="right" for="modalLRInput10"> User Name</label>
+                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="username">
+                        
                       </div> 
                       <div class="md-form form-sm mb-1">
-                        <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" name="user_email">
                         <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                        <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" name="user_email">
+                        
                       </div>
                       <div class="md-form form-sm mb-1">
-                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
                         <label data-error="wrong" data-success="right" for="modalLRInput10">Your Phone Number</label>
+                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
+                        
                       </div> 
 
                       <div class="md-form form-sm mb-1">
-                       
+                        <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>                       
                         <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" name="user_password">
-                        <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                        
                       </div>
                       <div class="text-center mt-2">
                         <button class="btn btn-info" name="submit" type="submit">Sign Up <i class="fas fa-sign-in ml-1"></i></button>
@@ -313,32 +318,32 @@
                     <td>User Id</td>
 
 
-                    <td><?php echo $_SESSION['id']?> </td>
+                    <td><?php echo $_COOKIE['id'] ?> </td>
                   
               </tr>
               <tr>
                     <td>Full Name</td>
 
 
-                    <td><?php echo $_SESSION['name']?> </td>
+                    <td><?php echo $_COOKIE['name']?> </td>
                   
               </tr>
               <tr>
                   <td>User Name</td>
-                  <td><?php echo $_SESSION['login_user']?></td>
+                  <td><?php echo $_COOKIE['login_user']?></td>
               </tr>
                 <tr>
                   <td>Email</td>
-                  <td><?php echo $_SESSION['email']?></td>
+                  <td><?php echo $_COOKIE['email']?></td>
               </tr>
                 <tr>
                   <td>Phone Number</td>
-                  <td><?php echo $_SESSION['phone']?></td>
+                  <td><?php echo $_COOKIE['phone']?></td>
               </tr>
               
                 <tr>
                   <td>Enrolling Type</td>
-                  <td><?php echo $_SESSION['type']?></td>
+                  <td><?php echo $_COOKIE['type']?></td>
               </tr>
           </tbody>
       </table>
