@@ -208,6 +208,7 @@
                 <div class="form-group">
                   <div class="col-md-12">
                     <input type="text" placeholder="Your Phone Number" class="form-control" name="phone_num">
+                    
                   </div>
                 </div>
                 <div class="form-group">

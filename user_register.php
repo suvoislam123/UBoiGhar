@@ -5,12 +5,12 @@ include("config.php");
 if(isset($_POST["submit"]))
 {
   $count=0;
-  $sql = "SELECT username from user";
+  $sql = "SELECT username,user_email from user";
   $result=mysqli_query($con,$sql);
   while($row=mysqli_fetch_assoc($result))
   {
 
-    if($row['username']==$_POST['username'])
+    if($row['username']==$_POST['username'] || $row['user_email'] ==$_POST['user_email'])
     {
       $count=$count+1;
     }
@@ -45,7 +45,8 @@ header("Location:index.php");
 else {
   ?>
 <script type="text/javascript">
-alert("The username already exit");
+alert("The username or email already exist");
+window.location.href = "http://localhost/UBoighar/index.php";
 </script>
 
 <?php

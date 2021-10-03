@@ -3,7 +3,7 @@
 if(isset($_POST['submit']))
 {
 	
-	echo '<script> alert("Hi")</script>';
+	
 	$count=0;
     $sql="SELECT * from user where username='$_POST[user_email]'|| user_email='$_POST[user_email]' && password ='$_POST[user_password]'";
     $result = mysqli_query($con,$sql);
@@ -33,7 +33,9 @@ if(isset($_POST['submit']))
     }
     else{?>
     	<script type="text/javascript">
-    		alert("Email and password dont matched");
+    		alert("Email and password don't matched");
+            window.location.href = "http://localhost/UBoighar/index.php";
+
 
     	</script>
     	<?php
