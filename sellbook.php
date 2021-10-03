@@ -167,10 +167,8 @@
               </div>
               <div class="form-group">
                 <label for="" class="col-sm-3 control-label">Seller Phone Number</label>
-                <div class="col-sm-8">
-                  
-
-                  <input <?php if(!empty($_COOKIE['login_user'])){echo 'type="text" class="form-control" name="seller_num" value = "'.$_COOKIE["phone"].'" id="mobile" required';}else{ echo 'type="text" class="form-control" name="seller_num"  id="mobile" required';} ?>>
+                <div class="col-sm-8">   
+                 <input <?php if(!empty($_COOKIE['login_user'])){echo 'type="text" class="form-control" name="seller_num" value = "'.$_COOKIE["phone"].'" id="mobile" required';}else{ echo 'type="text" class="form-control" name="seller_num"  id="mobile" required';} ?>>
                 </div>
               </div>
               <div class="form-group">
