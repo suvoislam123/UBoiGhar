@@ -256,7 +256,7 @@
 
             <!--Body-->
             <div class="modal-body">
-              <form action="user_signup.php" method="post">
+              <form action="user_register.php" method="post">
                     <div class="md-form form-sm mb-1">
                         <label data-error="wrong" data-success="right" for="modalLRInput10">Your Full Name</label>
                         <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
@@ -274,7 +274,7 @@
                       </div>
                       <div class="md-form form-sm mb-1">
                         <label data-error="wrong" data-success="right" for="modalLRInput10">Your Phone Number</label>
-                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_full_name">
+                        <input type="text" id="modalLRInput10" class="form-control form-control-sm validate" name="user_phone">
                         
                       </div> 
 

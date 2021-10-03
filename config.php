@@ -7,6 +7,6 @@
     if(!$con){
       echo "Database connection error.";
     }else {
-      echo "connection successfull.";
+      
     }
  ?>
