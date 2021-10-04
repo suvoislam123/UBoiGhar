@@ -161,7 +161,7 @@
     </div>
 
     <!-- new books products section -->
-    <section id="products">
+    <section id="products" >
         <div class="container my-5">
           <div class="text-center">
             <h3 class="font-weight-bold text-primary">New Collection Books</h3>
@@ -179,8 +179,19 @@
             <div class="row">
 
               <?php
-                  $sel="SELECT * FROM adm_newbook WHERE status='1' ORDER BY id DESC";
-                  $Q=mysqli_query($con,$sel);
+
+                  if(isset($_POST['submit'])){
+                    $sel="select * from adm_newbook where book_title like '%$_POST[search]%' || id='$_POST[search]';";
+                    $Q=mysqli_query($con,$sel);
+                    header("Location:index.php");
+
+                  }
+                  else{
+                    $sel="SELECT * FROM adm_newbook WHERE status='1'|| status='7' ORDER BY id DESC";
+                    $Q=mysqli_query($con,$sel);
+                    
+                  }
+                  
                   while($data=mysqli_fetch_assoc($Q)){
                ?>
                 <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1 mb-3">

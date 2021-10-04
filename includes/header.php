@@ -75,11 +75,15 @@
                                 <ul>
                                     <li class="toggle-search-icon"><a href="#"><span class="ti-search"></span>
                                             <div class="toggle-search-box">
-                                                <form action="#" id="searchbox">
+                                                <form action="index.php?#products" id="searchbox" method="post">
                                                     <input placeholder="Search" type="text">
-                                                    <button class="button-search"><span class="ti-search"></span></button>
+                                                    <button class="button-search" type="submit"><span class="ti-search"></span></button> 
+                                                    
+
                                                 </form>
+                                                
                                             </div>
+
                                         </a>
 
                                     </li>

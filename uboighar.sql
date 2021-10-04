@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2021 at 06:21 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Oct 04, 2021 at 08:20 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,17 +38,6 @@ CREATE TABLE `adm_active_reqbook` (
   `status` int(2) NOT NULL,
   `req_bookimg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `adm_active_reqbook`
---
-
-INSERT INTO `adm_active_reqbook` (`id`, `req_title`, `req_author`, `req_edition`, `req_quantity`, `req_phone`, `req_address`, `status`, `req_bookimg`) VALUES
-(5, 'C Programming language ', 'Thomas H. Cormen', '5th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 2, 'user_1623297584_119659305.png'),
-(6, 'Discrete mathematics', 'Thomas H. Cormen', '3rf', 4, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623303589_940489891.png'),
-(7, 'Discrete mathematics', 'Thomas H. Cormen', '3rf', 4, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623303589_940489891.png'),
-(8, 'Introduction to Algorithm', 'Thomas H. Cormen', '4th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623296548_922352543.png'),
-(9, 'C Programming language ', 'Thomas H. Cormen', '5th', 5, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623297584_119659305.png');
 
 -- --------------------------------------------------------
 
@@ -135,7 +124,16 @@ INSERT INTO `adm_billing_info` (`id`, `fullname`, `email`, `mobile`, `address`, 
 (2, 'saifur', 'fazla223344@gmail.com', '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 'Tupelo', 'sdasd', 'Bkash', '01309080748', '01309080748'),
 (3, 'saifur', 'fazla223344@gmail.com', '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 'Tupelo', 'sdasd', 'Bkash', '01309080748', '01309080748'),
 (4, 'saifur', 'saifurnstuiit223344@gmail.com', '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 'Tupelo', 'ffj', '', '01309080748', '01309080748'),
-(5, 'saifur', 'fazla223344@gmail.com', '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 'Tupelo', 'sdasd', 'Bkash', '01309080748', '01309080748');
+(5, 'saifur', 'fazla223344@gmail.com', '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 'Tupelo', 'sdasd', 'Bkash', '01309080748', '01309080748'),
+(11, 'shuvo', 'mkmkkk@gmail.com', '01309099327', 't4oeijgweihjqqqq', 'Cumilla', '#2885', 'Nagad', '01309099327', 'shsdhsdfhd'),
+(12, 'shuvo', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Bkash', '01309099327', 'shsdhsdfhd'),
+(13, 'shuvo1', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Bkash', '01309099327', 'shsdhsdfhd'),
+(14, 'suvo123', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Rocket', '01309099327', 'shsdhsdfhd'),
+(15, 'suvo123', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Rocket', '01309099327', 'shsdhsdfhd'),
+(16, 'suvo123', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Rocket', '01309099327', 'shsdhsdfhd'),
+(17, 'suvo123', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Rocket', '01309099327', 'shsdhsdfhd'),
+(18, 'suvo123', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Rocket', '01309099327', 'shsdhsdfhd'),
+(19, '', 'suvoislam753@gmail.com', '01309099327', 't4oeijgweihj', 'Cumilla', '#2885', 'Nagad', '01309099327', 'shsdhsdfhd');
 
 -- --------------------------------------------------------
 
@@ -348,8 +346,7 @@ CREATE TABLE `adm_pen_reqbook` (
 INSERT INTO `adm_pen_reqbook` (`id`, `req_title`, `req_author`, `req_edition`, `req_quantity`, `req_phone`, `req_address`, `status`, `req_bookimg`) VALUES
 (2, 'Introduction to Algorithm', 'Thomas H. Cormen', '4th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623296548_922352543.png'),
 (3, 'C Programming language ', 'Thomas H. Cormen', '5th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623297584_119659305.png'),
-(4, 'C Programming language ', 'Thomas H. Cormen', '5th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623297584_119659305.png'),
-(10, 'Web Technology', 'Saifur', '3rd', 3, '01838082983', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623333451_148290311.png');
+(4, 'C Programming language ', 'Thomas H. Cormen', '5th', 3, '01309080748', 'Laskminarayonpur, mijdee court, Noakhali', 1, 'user_1623297584_119659305.png');
 
 -- --------------------------------------------------------
 
@@ -425,7 +422,9 @@ INSERT INTO `adm_selloldbook` (`secbook_id`, `secbook_title`, `secbook_author`, 
 (1, 'Design Patterns', 'Thomas', '6th', '1290', '11243656787', 'user_1623212418_146854890.png'),
 (5, 'Design Patterns', 'Thomas', '6th', '1290', '11243656787', 'user_1623212418_146854890.png'),
 (6, 'Introduction to Algorithm', 'Holman', '1st', '1200', '01838082983', 'user_1625936832_74688876.png'),
-(7, 'Introduction to Algorithm', 'Erich gamma ', '3rd', '1500', '01838082983', 'user_1625936922_823572525.png');
+(7, 'Introduction to Algorithm', 'Erich gamma ', '3rd', '1500', '01838082983', 'user_1625936922_823572525.png'),
+(8, 'Operating System', 'Shuvo Islam', '9th', '120', '01309099327', 'user_1633292880_165562848.PNG'),
+(9, 'Operating System', 'Shuvo Islam', '9th', '120', '199999', 'user_1633369862_689579538.PNG');
 
 -- --------------------------------------------------------
 
@@ -448,7 +447,8 @@ INSERT INTO `adm_subscribers` (`subscriber_id`, `subscriber_email`) VALUES
 (3, 'sivlu@gmail.com'),
 (4, 'reja18@gmail.com'),
 (6, 'akram@gmail.com'),
-(7, 'akram2233@gmail.com');
+(7, 'akram2233@gmail.com'),
+(8, 'suvoislam753@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -551,6 +551,29 @@ INSERT INTO `categories` (`id`, `categories`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `month_wise_income`
+--
+
+CREATE TABLE `month_wise_income` (
+  `month_id` int(10) NOT NULL,
+  `month_name` varchar(12) NOT NULL,
+  `income` int(14) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `month_wise_income`
+--
+
+INSERT INTO `month_wise_income` (`month_id`, `month_name`, `income`) VALUES
+(1, 'January', 5000),
+(2, 'Fabruary', 7000),
+(3, 'March', 7000),
+(4, 'April', 1300),
+(5, 'June', 30000);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product`
 --
 
@@ -591,6 +614,30 @@ INSERT INTO `product` (`id`, `categories_id`, `sub_categories_id`, `name`, `mrp`
 (11, 2, 0, 'Test1', 100, 50, 10, '457926432_697347005_2__1538219531_49.204.69.38_600x.jpg', 'Test', 'test', 0, '', '', '', 0, 1),
 (12, 2, 1, 'Test Man', 120, 100, 10, '332899305_457926432_697347005_2__1538219531_49.204.69.38_600x.jpg', 'Test desc', 'Test desc', 0, '', '', '', 2, 1),
 (13, 1, 0, 'My Mobile', 200, 150, 10, '991997612_567328558_samsung-galaxy-s10-plus-1tb-ceramic-white-12gb-ram-.jpg', 'Test desc', 'Test desc', 1, '', '', '', 2, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(8) NOT NULL,
+  `user_full_name` varchar(60) NOT NULL,
+  `user_email` varchar(80) NOT NULL,
+  `username` varchar(70) NOT NULL,
+  `password` varchar(70) NOT NULL,
+  `mobile_number` int(8) NOT NULL,
+  `user_type` varchar(20) NOT NULL DEFAULT 'common'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_full_name`, `user_email`, `username`, `password`, `mobile_number`, `user_type`) VALUES
+(1, 'Shuvo Islam', 'suvoislam753@gmail.com', 'suvo123', '123', 199999, 'common'),
+(5, 'ssss', 'ssss@gmail.com', 'efty123', '1111', 130909, 'common');
 
 --
 -- Indexes for dumped tables
@@ -717,10 +764,22 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `month_wise_income`
+--
+ALTER TABLE `month_wise_income`
+  ADD PRIMARY KEY (`month_id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -730,13 +789,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `adm_active_reqbook`
 --
 ALTER TABLE `adm_active_reqbook`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `adm_banner`
 --
 ALTER TABLE `adm_banner`
-  MODIFY `ban_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ban_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `adm_bestsellbook`
@@ -748,7 +807,7 @@ ALTER TABLE `adm_bestsellbook`
 -- AUTO_INCREMENT for table `adm_billing_info`
 --
 ALTER TABLE `adm_billing_info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `adm_contact`
@@ -814,13 +873,13 @@ ALTER TABLE `adm_sechandbook`
 -- AUTO_INCREMENT for table `adm_selloldbook`
 --
 ALTER TABLE `adm_selloldbook`
-  MODIFY `secbook_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `secbook_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `adm_subscribers`
 --
 ALTER TABLE `adm_subscribers`
-  MODIFY `subscriber_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `subscriber_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `adm_testimonil`
@@ -851,6 +910,12 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
